@@ -27,7 +27,8 @@ module.exports = async (req, res) => {
     // 判断是服务器(Server)还是无服务器(ServerLess)，决定使用Chromium
     const launchOpt = await launch(data.font)
 
-    browser = await puppeteer.launch(launchOpt)
+    browser = await puppeteer.launch({ args: ['--no-sandbox'] })
+    // browser = await puppeteer.launch(launchOpt)
 
     // 创建新的标签页
     const page = await browser.newPage()
