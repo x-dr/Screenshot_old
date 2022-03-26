@@ -1,0 +1,43 @@
+{
+  "name": "webstack-screenshot",
+  "version": "1.0.6",
+  "description": "网站截图 API | Website Screenshot API ",
+  "main": "index.js",
+  "scripts": {
+    "start": "node ./start.js",
+    "start:hot": "npx nodemon ./start.js",
+    "lint": "eslint . && prettier --check .",
+    "lint:fix": "eslint --fix . && prettier --check --write ."
+  },
+  "keywords": [
+    "webstack",
+    "screenshot",
+    "page",
+    "website",
+    "site",
+    "screen",
+    "snapshot",
+    "img",
+    "image"
+  ],
+  "author": "Lete乐特",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Lete114/WebStack-Screenshot/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Lete114/WebStack-Screenshot.git"
+  },
+  "dependencies": {
+    "body-data": "^1.0.3",
+    "chrome-aws-lambda": "^10.1.0",
+    "puppeteer": "^13.4.1",
+    "puppeteer-core": "^13.4.1"
+  },
+  "devDependencies": {
+    "eslint": "^8.10.0",
+    "nodemon": "^2.0.15",
+    "prettier": "^2.5.1"
+  }
+}

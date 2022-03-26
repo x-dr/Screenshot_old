@@ -1,0 +1,8 @@
+{
+    "name": "WebStack-Screenshot",
+    "description": "WebStack-Screenshot on Heroku",
+    "keywords": ["WebStack-Screenshot"],
+    "website": "https://github.com/x-dr/Screenshot.git",
+    "repository": "https://github.com/x-dr/Screenshot.git",
+    "image": "heroku/nodejs"
+  }
