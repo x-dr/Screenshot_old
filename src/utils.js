@@ -49,6 +49,8 @@ module.exports = {
       executablePath: await chromium.executablePath,
       headless: chromium.headless
     }
+
+    console.log(process.env,process.env.PUPPETEER_SERVER);
     // 判断是服务器(Server)还是无服务器(ServerLess)
     return process.env.PUPPETEER_SERVER ? {} : chromiumOptions
   },
