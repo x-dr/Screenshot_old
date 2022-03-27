@@ -1,8 +1,17 @@
 {
-    "name": "WebStack-Screenshot",
-    "description": "WebStack-Screenshot on Heroku",
-    "keywords": ["WebStack-Screenshot"],
-    "website": "https://github.com/x-dr/Screenshot.git",
-    "repository": "https://github.com/x-dr/Screenshot.git",
-    "image": "heroku/nodejs"
-  }
+  "name": "WebStack-Screenshot",
+  "description": "WebStack-Screenshot on Heroku",
+  "keywords": [
+    "WebStack-Screenshot"
+  ],
+  "website": "https://github.com/x-dr/Screenshot.git",
+  "repository": "https://github.com/x-dr/Screenshot.git",
+  "buildpacks": [
+    {
+      "url": "https://github.com/CoffeeAndCode/puppeteer-heroku-buildpack.git"
+    },
+    {
+      "url": "heroku/nodejs"
+    }
+  ]
+}

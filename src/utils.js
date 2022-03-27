@@ -52,7 +52,7 @@ module.exports = {
 
     // console.log(process.env,process.env.PUPPETEER_SERVER);
     // 判断是服务器(Server)还是无服务器(ServerLess)/app/.heroku/node
-    return process.env.NODE_HOME==='/app/.heroku/node' ? {} : chromiumOptions
+    return process.env.PUPPETEER_SERVER ? {} : chromiumOptions
   },
   goto(data) {
     const options = {}
